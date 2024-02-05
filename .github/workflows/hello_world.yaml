@@ -42,7 +42,7 @@ jobs:
         run: ls
       
       - name: display just
-        run: cd ./check
+        run: ls ./check
       - name: display content 2 
         run: ls
       - name: display just 2
