@@ -40,4 +40,10 @@ jobs:
 
       - name: display content 
         run: ls
+      
+      - name: display just
+        run: cd ./check
+      - name: display just 2
+        run: cat just.txt
+      
     
