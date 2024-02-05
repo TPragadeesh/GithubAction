@@ -45,7 +45,9 @@ jobs:
         run: ls ./check
       - name: display content 2 
         run: ls
-      - name: display just 2
-        run: cat just.txt
+      - name: run sequence of commands
+        run: |
+          cd ./check
+          ls
       
     
