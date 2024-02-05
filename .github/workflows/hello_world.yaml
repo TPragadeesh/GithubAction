@@ -26,10 +26,18 @@ jobs:
   dockerize:
     runs-on: ubuntu-latest
     steps:
+      
       - name: docker images
         run: docker images
       - name: docker elasticsearch
         run: docker pull docker.elastic.co/elasticsearch/elasticsearch:8.8.1
       - name: docker images part 2
         run: docker images
+  displaycontent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: display content 
+        run: ls
     
